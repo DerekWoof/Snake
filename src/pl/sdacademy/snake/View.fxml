@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sdacademy.snake.Controller">
+   <children>
+      <Canvas fx:id="canvas" focusTraversable="true" height="200.0" mouseTransparent="true" width="200.0" VBox.vgrow="ALWAYS" />
+      <GridPane alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <Button fx:id="leftButton" focusTraversable="false" mnemonicParsing="false" text="L" GridPane.rowIndex="1" />
+            <Button fx:id="downButton" focusTraversable="false" mnemonicParsing="false" text="D" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="rightButton" focusTraversable="false" mnemonicParsing="false" text="P" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="upButton" focusTraversable="false" mnemonicParsing="false" text="G" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
